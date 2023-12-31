@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(1, 0, 88);
+}
+
+#text {
+    position: absolute;
+    color: rgb(255, 218, 218);
+    font-weight: bolder;
+    font-size: 30px;
+    background-image: linear-gradient(55deg,rgb(0, 0, 104), rgb(0, 0, 146), #7bebff, cyan);
+    border: solid 7px transparent;
+    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy74tJJkLBFD4521m1SANF64uyHUyE-zVO-g&usqp=CAU") 5;
+    padding: 15px;
+    animation: first 8s both;
+    animation-delay: 8s;
+    width: 100vw;
+}
+
+.tree {
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation: second 8s both;
+    animation-delay: 16s;
+    top: calc(50% - 80px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 205px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.first {
+    width: 15px; 
+    height: 30px;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 60px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 190px);
+    transform: translateX(-50%);
+}
+
+.second {
+    width: 15px; 
+    height: 30px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 80px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 150px);
+    transform: translateX(-50%);
+}
+
+.third {
+    width: 15px; 
+    height: 30px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 110px);
+    transform: translateX(-50%);
+}
+
+.bottom {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 10px);
+    transform: translateX(-50%);
+    background-color: brown;
+}
+
+.a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.a1 {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 160px);
+    background-color: rgb(255, 0, 0);
+    animation: a1 1s linear infinite;
+}
+
+.a2 {
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% - 125px);
+    background-color: rgb(0, 0, 255);
+    animation: a2 .5s linear infinite;
+}
+
+.a3 {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 95px);
+    background-color: rgb(255, 0, 255);
+    animation: a3 1s linear infinite;
+}
+
+.a4 {
+    position: absolute;
+    left: calc(50% + 1px);
+    top: calc(50% - 70px);
+    background-color: rgb(0, 255, 221);
+    animation: a4 .5s linear infinite;
+}
+
+.a5 {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 40px);
+    background-color: rgb(255, 255, 0);
+    animation: a5 1s linear infinite;
+}
+
+.a6 {
+    position: absolute;
+    left: calc(50% + 20px);
+    top: calc(50% - 30px);
+    background-color: rgb(226, 128, 0);
+    animation: a6 .5s linear infinite;
+}
+
+#gift {
+    width: 300px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: third 8s both;
+    animation-delay: 20s;
+}
+
+.mek {
+    width: 20px;
+    background-color: rgb(175, 0, 0);
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.erku {
+    width: 300px;
+    background-color: rgb(175, 0, 0);
+    height: 20px;
+    position: absolute;
+    top: 50%;
+}
+
+.heart1 {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    bottom: calc(50% - 30px);
+    left: calc(50% - 60px);
+    background-color: #ff0000;
+    transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.heart2 {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    background-color: #fff;
+    background-color: #ff0000;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: calc(50% - 30px);
+    left: calc(50% - 30px);
+    transform: rotate(500deg);
+}
+
+@keyframes a1 {
+    100% {
+        background-color: rgb(255, 78, 78);
+    }
+}
+
+@keyframes a2 {
+    100% {
+        background-color: rgb(78, 90, 255);
+    }
+}
+
+@keyframes a3 {
+    100% {
+        background-color: rgb(255, 146, 250);
+    }
+}
+
+@keyframes a4 {
+    100% {
+        background-color: rgb(153, 255, 216);
+    }
+}
+
+@keyframes a5 {
+    100% {
+        background-color: rgb(255, 214, 78);
+    }
+}
+
+@keyframes a6 {
+    100% {
+        background-color:  rgb(255, 149, 78);
+    }
+}
+
+@keyframes first {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {  
+        top:100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes third {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes gift {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#s {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: gift 8s both;
+    animation-delay: 25s;
+}
+
+#img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#h1 {
+    position: absolute;
+    top: calc(50% - 50px);
+    color: white;
+}
